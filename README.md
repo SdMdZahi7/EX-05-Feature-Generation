@@ -21,6 +21,7 @@ Save the data to the file
 
 # 1.FEATURE GENERATION FOR Data.csv
 ## CODE FOR FEATURE ENCODING AND FEATURE SCALING:
+```
 import pandas as pd
 df=pd.read_csv("data.csv")
 df
@@ -72,6 +73,7 @@ from sklearn.preprocessing import RobustScaler
 rs=RobustScaler()
 df4=pd.DataFrame(rs.fit_transform(df),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
 df4
+```
 # OUTPUT:
 ## Given DataFrame
 ![1 give](https://user-images.githubusercontent.com/94187572/166731875-91b971d1-029c-49cb-8226-b021719c4ad4.png)
@@ -184,6 +186,7 @@ df4
 
 # 3.FEATURE GENERATION FOR titanic_dataset.csv
 ## CODE FOR FEATURE ENCODING AND FEATURE SCALING:
+```
 import pandas as pd
 df=pd.read_csv("titanic_dataset.csv")
 df
@@ -225,6 +228,7 @@ from sklearn.preprocessing import RobustScaler
 rs = RobustScaler()
 df4=pd.DataFrame(rs.fit_transform(df),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked','PClass'])
 df4
+```
 # OUTPUT:
 ## Given DataFrame
 ![3 give](https://user-images.githubusercontent.com/94187572/166736320-b170e8c5-3f0d-452d-aebf-f80512efe95d.png)
