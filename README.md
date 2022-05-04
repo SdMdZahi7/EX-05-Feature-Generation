@@ -112,6 +112,7 @@ df4
 
 # 2.FEATURE GENERATION FOR Encoding.csv
 ## CODE FOR FEATURE ENCODING AND FEATURE SCALING:
+```
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
 df
@@ -152,6 +153,7 @@ from sklearn.preprocessing import RobustScaler
 rs=RobustScaler()
 df4=pd.DataFrame(rs.fit_transform(df),columns=['id','bin_1','bin_2','nom_0','Ord_2'])
 df4
+```
 # OUTPUT:
 ## Given DataFrame
 ![2 give](https://user-images.githubusercontent.com/94187572/166734059-862c812a-6136-471b-82b3-5076fd8f5da8.png)
